@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
   cl = console.log;
 
   let $auth = firebase.auth();
@@ -11,20 +11,20 @@ $(document).ready(function() {
   let $email;
   let $password;
 
-  $inputEmail.on('input',(event)=>{
+  $inputEmail.on('input', (event) => {
     $email = $inputEmail.val();
     cl($email);
-    functionValidateEmail($email,$inputEmail);
+    functionValidateEmail($email, $inputEmail);
   });
 
-  $inputPassword.on('input',(event)=>{
+  $inputPassword.on('input', (event) => {
     $password = $inputPassword.val();
     cl($password);
-    functionValidatePassword($password,$inputPassword);
+    functionValidatePassword($password, $inputPassword);
     activeButton($btnLogin);
   });
 
-  $btnLogin.on('click', (event) =>{
+  $btnLogin.on('click', (event) => {
     let $promise = $auth.signInWithEmailAndPassword($email, $password);
     $promise.catch(event => alert(event.message));
 
@@ -65,6 +65,6 @@ $(document).ready(function() {
       email: user.email,
       photo: user.photoURL
     };
-    firebase.database().ref('bd/' + user.uid).set(users);
-  }
+    firebase.database().ref('bd/' + user.uid).push(users);
+  };
 });

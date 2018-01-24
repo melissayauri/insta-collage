@@ -11,22 +11,22 @@ $(document).ready(() =>{
   let $email;
   let $password;
 
-  $inputEmail.on('input',(event)=>{
+  $inputEmail.on('input', (event) => {
     $email = $inputEmail.val();
     cl($email);
-    functionValidateEmail($email,$inputEmail);
+    functionValidateEmail($email, $inputEmail);
   });
 
-  $inputPassword.on('input',(event)=>{
+  $inputPassword.on('input', (event) => {
     $password = $inputPassword.val();
     cl($password);
-    functionValidatePassword($password,$inputPassword);
+    functionValidatePassword($password, $inputPassword);
     activeButton($btnSignup);
   });
 
   $btnSignup.on('click', (event) => {  
     let $promise = $auth.createUserWithEmailAndPassword($email, $password);
     $promise.catch(event => alert(event.message));    
-    window.location.href = '../index.html';
+    window.location.href = '../views/collage.html';
   });
 });

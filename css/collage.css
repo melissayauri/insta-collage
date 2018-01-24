@@ -46,3 +46,40 @@ body {
 .icon {
   font-size: 3rem;
 }
+
+/* Style for views collage*/
+
+.imagen {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+/* contenedores*/
+[data-container ] {
+  height: 300px;
+  width: 100%;
+  margin: 1rem;
+  background-color: rgba(154,154,154, 0.5);
+  float: left;
+}
+
+.line{
+  outline: 1px solid red;
+}
+
+@media (min-width: 992px) {
+  [data-container ] {
+    height: 450px;
+    width: 100%;
+    margin: 1rem;
+    background-color: rgba(154,154,154, 0.5);
+    float: left;
+  }
+
+  .imagen {
+    width: 180px;
+    height: 180px;
+    float: left;
+  }
+ }
