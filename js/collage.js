@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // La funcionalidad de tu proyecto
 window.addEventListener('load', function(event) {
   /* variables de los atributos al container y las imagenes*/
@@ -27,3 +28,20 @@ window.addEventListener('load', function(event) {
     this.className = '';
   }
 });
+=======
+$(document).ready(() => {
+  $imgUser = $('#image-profile');
+
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      let codeUser = user.uid;
+      let nameUser = user.displayName;
+      let photoUser = user.photoURL;
+
+      $imgUser.attr('src', photoUser);
+    } else {
+      // No user is signed in.
+    }
+  });
+});
+>>>>>>> 65ec5d3eb8dceda69b1d744db47ade8658f3d7db

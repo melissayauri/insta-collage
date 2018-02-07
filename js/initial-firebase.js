@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(document).ready(() => {
   // Initialize Firebase
-  var config = {
+  let config = {
     apiKey: 'AIzaSyDAblOIjO3G2d8M5TLtkreAR2elAXu6_dw',
     authDomain: 'insta-collage-9b6b9.firebaseapp.com',
     databaseURL: 'https://insta-collage-9b6b9.firebaseio.com',
