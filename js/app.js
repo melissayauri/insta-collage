@@ -15,7 +15,7 @@ $(document).ready(function() {
     firebase.auth().onAuthStateChanged(firebaseUser => {
       if (firebaseUser) {
         alert('Usted se ha logueado Correctamente');
-        window.location.href = 'start.html';
+        window.location.href = 'collage.html';
       } else {
         alert('usted no esta registrado');
       }
