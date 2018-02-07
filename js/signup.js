@@ -1,15 +1,28 @@
-$(document).ready(function() {
+$(document).ready(() =>{
 
-    let $btnSignup = $('#btn-signup');
+  isValidEmailAddress = (emailAddress) => {
+    let regEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
+    return regEmail.test(emailAddress);
+  };
 
-    $btnSignup.on('click', function(event) {
-        let $inputEmail = $('#inputUser');
-        let $inputPassword = $('#nputPassword');
-        let $email = $inputEmail.val();
-        let $pass = $inputPassword.val();
-        let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
-        $promise.catch(event => alert(event.message));
+  // validate email
+  validateEmail = (email)=>{
     
-        window.location.href = '../index.html';
-      });
+
+  };
+
+
+  let $btnSignup = $('#btn-signup');
+
+    $btnSignup.on('click', (event) => {
+      let $inputEmail = $('#inputUser');
+      let $inputPassword = $('#nputPassword');
+      let $email = $inputEmail.val();
+      let $pass = $inputPassword.val();
+      
+      let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
+      $promise.catch(event => alert(event.message));
+      
+      window.location.href = '../index.html';
+    });
 });
