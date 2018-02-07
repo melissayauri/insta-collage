@@ -14,6 +14,7 @@ $(document).ready(function() {
       console.log(user);
       // Llamamos a la funcion
       saveData(result.user);
+      window.location.assign('views/collage.html');
     });
   }
 
