@@ -1,0 +1,48 @@
+/* Gobal */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #FFFFFF;
+  height: 100vh;
+  background: linear-gradient(20deg, #c07b4f 10%, #ae9354, #68b285 80%);
+}
+
+/* Style for header */
+
+.navbar-container {
+  background: rgba(255, 2555, 255, 0.4);
+  border: none;
+}
+
+[alt="user"] {
+  width: 3rem;
+  border-radius: 100%;
+}
+
+.container-img-icon {
+  display: flex;
+}
+
+.container-close {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+}
+
+.container-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  font-size: 3rem;
+}

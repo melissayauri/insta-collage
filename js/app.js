@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    //login with email and password
+  let $auth = firebase.auth();
+  
+  // Login with email and password
   let $btnLogin = $('#btn-login');
 
   $btnLogin.on('click', function(event) {
@@ -24,25 +26,26 @@ $(document).ready(function() {
 
 
   // Login google
-  var $loginGoogle = $('#log-in-google');
+  let $loginGoogle = $('#log-in-google');
 
   $loginGoogle.on('click', googleLogin);
 
-  function googleLogin() {
-    var provider = new firebase.auth.GoogleAuthProvider();
+  const googleLogin = () => {
+    let provider = new firebase.auth.GoogleAuthProvider();
   
-    firebase.auth().signInWithPopup(provider).then(function(result) {
+    firebase.auth().signInWithPopup(provider).then((result) => {
       // The signed-in user info.
-      var user = result.user;
+      let user = result.user;
       // Mostramos su contenido
       console.log(user);
       // Llamamos a la funcion
       saveData(result.user);
+      window.location.assign('views/collage.html');
     });
   }
 
-  function saveData(user) {
-    var users = {
+  const saveData = (user) => {
+    let users = {
       uid: user.uid,
       name: user.displayName,
       email: user.email,
