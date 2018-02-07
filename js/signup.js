@@ -1,4 +1,5 @@
 $(document).ready(() =>{
+  cl = console.log;
 
   let $auth = firebase.auth();
 
@@ -21,8 +22,8 @@ $(document).ready(() =>{
       let $inputPassword = $('#inputPassword');
       let $email = $inputEmail.val();
       let $pass = $inputPassword.val();
-      console.log($email);
-      console.log($pass);      
+      cl($email);
+      cl($pass);      
       let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
       $promise.catch(event => alert(event.message));
       

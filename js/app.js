@@ -1,23 +1,26 @@
 $(document).ready(function() {
+  cl = console.log;
+
   let $auth = firebase.auth();
-  
+
   // Login with email and password
   let $btnLogin = $('#btn-login');
 
   $btnLogin.on('click', function(event) {
     let $inputEmail = $('#inputUser');
-    let $inputPassword = $('#nputPassword');
+    let $inputPassword = $('#inputPassword');
 
     let $email = $inputEmail.val();
-    let $pass = $inputPassword.val();
-
-    let $promise = $auth.signInWithEmailAndPassword($email, $pass);
+    cl($email);
+    let $password = $inputPassword.val();
+    cl($password);
+    let $promise = $auth.signInWithEmailAndPassword($email, $password);
     $promise.catch(event => alert(event.message));
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
       if (firebaseUser) {
         alert('Usted se ha logueado Correctamente');
-        window.location.href = 'start.html';
+        window.location.href = 'views/collage.html';
       } else {
         alert('usted no esta registrado');
       }
