@@ -12,8 +12,8 @@
   <!-- Import Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Import Bootstrap.css-->
-  <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="../css/main.css">
 </head>
 
 <body>
@@ -32,54 +32,31 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 text">
-          <h1 class="title">Instagram</h1>
+          <h1 class="title">Sign-Up</h1>
         </div>
         <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4">
           <form class="space">
             <div class="form-group container-input">
+              <label for="inputUser">User Name</label>
               <input id="user" type="text" class="form-control focus-input transparent" name="user" placeholder="Ex: pepe">
             </div>
             <div class="form-group container-input">
+              <label for="inputPassword">Password</label>
               <input id="inputPassword" type="password" class="form-control transparent focus-input" placeholder="Ex: w3Un<po>0">
             </div>
           </form>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 container-button-next">
-          <button id="submit" type="button" class="btn btn-default btn-lg btn-block button-next">Log In</button>
-          <div>
-            <p class="text">Have you forgotten your login password?
-              <a class="link" href="">Get help</a>
-            </p>
+          <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 container-button-next">
+            <button id="submit" type="button" class="btn btn-default btn-lg btn-block button-next">Sign Up</button>
           </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 text">
-          <hr class="content">
-        </div>
-        <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4">
-          <p>
-            <i class="fa fa-google-plus icon"></i>
-            <span>Sign in with gmail</span>
-          </p>
         </div>
       </div>
     </div>
   </section>
-  <hr>
-  <!-- Footer -->
-  <footer>
-    <div>
-      <div>
-        <p>You do not have an account?
-          <a class="link" href="views/signUp.html">Sign-Up</a>
-        </p>
-      </div>
-    </div>
-  </footer>
 
   <!-- Import jQuery and Bootstrap.js -->
-  <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/signUp.js"></script>
 </body>
 
 </html>

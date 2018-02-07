@@ -18,12 +18,13 @@ body {
 
 .text {
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Style for sign up */
 
 .section-sign-up {
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 .title {
@@ -72,4 +73,14 @@ body {
 
 .icon {
   margin-right: 1rem;
+}
+
+/* Style for view sign-up */
+
+.space {
+  margin-bottom: 4rem;
+}
+
+.container-input {
+  margin-bottom: 3rem;
 }
