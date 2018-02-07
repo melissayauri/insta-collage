@@ -1,11 +1,11 @@
-$(document).ready(function() {
+$(document).ready(() => {
   $imgUser = $('#image-profile');
 
-  firebase.auth().onAuthStateChanged(function(user) {
+  firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      var codeUser = user.uid;
-      var nameUser = user.displayName;
-      var photoUser = user.photoURL;
+      let codeUser = user.uid;
+      let nameUser = user.displayName;
+      let photoUser = user.photoURL;
 
       $imgUser.attr('src', photoUser);
     } else {
