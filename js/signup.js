@@ -2,8 +2,6 @@ $(document).ready(function() {
 
     let $btnSignup = $('#btn-signup');
 
-    let $auth = firebase.auth();
-
     $btnSignup.on('click', function(event) {
         let $inputEmail = $('#inputUser');
         let $inputPassword = $('#nputPassword');

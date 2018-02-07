@@ -1,5 +1,29 @@
 $(document).ready(function() {
-  // Login
+    //login with email and password
+  let $btnLogin = $('#btn-login');
+
+  $btnLogin.on('click', function(event) {
+    let $inputEmail = $('#inputUser');
+    let $inputPassword = $('#nputPassword');
+
+    let $email = $inputEmail.val();
+    let $pass = $inputPassword.val();
+
+    let $promise = $auth.signInWithEmailAndPassword($email, $pass);
+    $promise.catch(event => alert(event.message));
+
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+      if (firebaseUser) {
+        alert('Usted se ha logueado Correctamente');
+        window.location.href = 'start.html';
+      } else {
+        alert('usted no esta registrado');
+      }
+    });
+  });
+
+
+  // Login google
   var $loginGoogle = $('#log-in-google');
 
   $loginGoogle.on('click', googleLogin);
