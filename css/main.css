@@ -14,10 +14,25 @@ body {
   background: linear-gradient(20deg, #c07b4f 10%, #ae9354, #68b285 80%);
 }
 
+/* Style for language */
+
+.text {
+  margin-top: 2rem;
+}
+
 /* Style for sign up */
+
+.section-sign-up {
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-family: 'Satisfy', cursive;
+}
 
 .focus-input {
   border: none;
+  padding: 2.3rem;
 }
 
 .transparent {
@@ -31,8 +46,30 @@ body {
 .button-next {
   background: transparent;
   color: #fff;
+  border-color: #fff;
 }
 
+.content {
+  margin-top: 0;
+}
 
+.content::before {
+  width: 4%;
+  position: absolute;
+  background-color: #ae9354;
+  display: inline-block;
+  font-size: 1em;
+  color: #fff;
+  top: -0.7em;
+  text-align: center;
+  content: 'O';
+}
 
+.link {
+  color: #fff;
+  font-weight: 800;
+}
 
+.icon {
+  margin-right: 1rem;
+}

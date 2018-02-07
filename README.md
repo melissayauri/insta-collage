@@ -1,4 +1,4 @@
-# LabCar
+# Insta Collage
 
 ## Objetivo
 
@@ -42,19 +42,3 @@
 - Vista Mobile
 
 ![LabCar](assets/images/mobile.png)
-
-- Vista Desk
-
-![LabCar](assets/images/desktop.png)
-
-- Modal Log In
-
-![LabCar](assets/images/modal-inicio-sesion.png)
-
-- Modal Sign Up
-
-![LabCar](assets/images/modal-registrate.png)
-
-- Modal Driver
-
-![LabCar](assets/images/modal-conductor.png)
