@@ -33,7 +33,7 @@ $(document).ready(function() {
 
   $loginGoogle.on('click', googleLogin);
 
-  const googleLogin = () => {
+  function googleLogin() {
     let provider = new firebase.auth.GoogleAuthProvider();
   
     firebase.auth().signInWithPopup(provider).then((result) => {

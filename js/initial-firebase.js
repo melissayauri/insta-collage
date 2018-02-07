@@ -9,5 +9,4 @@ $(document).ready(() => {
     messagingSenderId: '764336514933'
   };
   firebase.initializeApp(config);
-
 });

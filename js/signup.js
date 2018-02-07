@@ -14,7 +14,6 @@ $(document).ready(() =>{
 
   };
 
-
   let $btnSignup = $('#btn-signup');
 
     $btnSignup.on('click', (event) => {
@@ -25,8 +24,7 @@ $(document).ready(() =>{
       cl($email);
       cl($pass);      
       let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
-      $promise.catch(event => alert(event.message));
-      
+      $promise.catch(event => alert(event.message));    
       window.location.href = '../index.html';
-    });
+  });
 });
