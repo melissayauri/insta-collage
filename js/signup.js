@@ -16,10 +16,11 @@ $(document).ready(() =>{
 
   $btnSignup.on('click', (event) => {
     let $inputEmail = $('#inputUser');
-    let $inputPassword = $('#nputPassword');
+    let $inputPassword = $('#inputPassword');
     let $email = $inputEmail.val();
     let $pass = $inputPassword.val();
-      
+    console.log($email);
+    console.log($pass);      
     let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
     $promise.catch(event => alert(event.message));
       
