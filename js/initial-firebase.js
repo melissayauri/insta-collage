@@ -8,6 +8,5 @@ $(document).ready(() => {
     storageBucket: 'insta-collage-9b6b9.appspot.com',
     messagingSenderId: '764336514933'
   };
-  firebase.initializeApp(config);
-  
+  firebase.initializeApp(config);  
 });

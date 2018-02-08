@@ -30,7 +30,12 @@
                 <a class="container-close" href="../index.html">close</a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container-icon">
-                <i class="fa fa-plus-circle icon"></i>
+                <form id="form-imagenes" class="photo-profile" action="">
+                  <label class="btn btn-file">
+                    <input type="file" name="file" value="" id="file" class="hidden">
+                    <i class="fa fa-plus-circle icon"></i>
+                  </label>
+                </form>
               </div>
             </div>
           </div>
@@ -43,7 +48,7 @@
       <div class="col-xs-12 col-md-12">
         <!--seccion de imagen¿es-->
         <div class="col-xs-12 col-md-12 ">
-          <div data-container="true" class="container-img">
+          <div id="container-img-collage" data-container="true" class="container-img">
             <h1>Tus fotos</h1>
             <img id="box1" draggable="true" class="imagen" src="https://i.pinimg.com/564x/9a/77/44/9a77444d2b9a7b8c31039be6dc9e52e6.jpg"
               alt="">
