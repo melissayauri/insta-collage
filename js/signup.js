@@ -8,15 +8,17 @@ $(document).ready(() =>{
 
   let $inputEmail = $('#inputUser');
   let $inputPassword = $('#inputPassword');
+  let $email;
+  let $password;
 
-  $inputEmail.on('input', (event) => {
-    let $email = $inputEmail.val();
+  $inputEmail.on('input',(event) => {
+    $email = $inputEmail.val()
     cl($email);
     functionValidateEmail($email, $inputEmail);
   });
 
-  $inputPassword.on('input', (event) => {
-    let $password = $inputPassword.val();
+  $inputPassword.on('input',(event) => {
+    $password = $inputPassword.val()
     cl($password);
     functionValidatePassword($password, $inputPassword);
   });

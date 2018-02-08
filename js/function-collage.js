@@ -1,7 +1,7 @@
 window.addEventListener('load', function(event) {
   /* variables de los atributos al container y las imagenes*/
   let draggable = document.querySelectorAll('[draggable]');
-  let containers = document.querySelectorAll('[data-container ]');
+  let containers = document.querySelectorAll('[data-container]');
   /* ejecutando los eventos*/
   draggable.forEach(function(value, i) {
     draggable[i].addEventListener('dragstart', dragstart);
