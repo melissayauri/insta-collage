@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,9 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!--Import Bootstrap.css-->
   <link type="text/css" rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
-  <link rel="shortcut icon" href="../assets/images/insta-logo.png">
+  <link rel="shortcut icon" href="assets/images/insta-logo.png">
   <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
   <!-- Language -->
   <header>
@@ -45,7 +43,7 @@
           </form>
         </div>
         <div class="col-xs-12 col-sm-4 col-lg-4 col-sm-offset-4 col-lg-offset-4 container-button-next">
-          <button id="btn-login" type="button" class="btn btn-default btn-lg btn-block button-next">Log In</button>
+          <button id="btn-login" type="button" disabled="disabled" class="btn btn-default btn-lg btn-block button-next">Log In</button>
           <div>
             <p class="text">Have you forgotten your login password?
               <a class="link" href="">Get help</a>
@@ -75,13 +73,14 @@
       </div>
     </div>
   </footer>
-
   <!-- Import jQuery and Bootstrap.js -->
   <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.9.1/firebase.js"></script>
   <script type="text/javascript" src="js/initial-firebase.js"></script>
   <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/validate-email.js"></script>
+  <script type="text/javascript" src="js/validate-password.js"></script>
+  <script type="text/javascript" src="js/activate-btn.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>
