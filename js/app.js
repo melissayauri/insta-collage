@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 $(document).ready(function() {
   cl = console.log;
 
@@ -38,7 +36,7 @@ $(document).ready(function() {
 
   function googleLogin() {
     let provider = new firebase.auth.GoogleAuthProvider();
-  
+
     firebase.auth().signInWithPopup(provider).then((result) => {
       // The signed-in user info.
       let user = result.user;
@@ -60,4 +58,3 @@ $(document).ready(function() {
     firebase.database().ref('bd/' + user.uid).set(users);
   }
 });
->>>>>>> 65ec5d3eb8dceda69b1d744db47ade8658f3d7db
