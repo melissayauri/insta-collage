@@ -15,6 +15,10 @@ window.addEventListener('load', function(event) {
   };
   function selection(event) {
     event.preventDefault();
+    if (event.type !== 'drop') {
+      /* console.log(event);*/
+      return;
+    }
     let elementId = event.dataTransfer.getData('text');
     let element = document.getElementById(elementId);
     if (element.parentNode === this) {
