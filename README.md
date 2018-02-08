@@ -46,3 +46,5 @@
 - Resultado
 
 ![LabCar](assets/images/layout1.PNG)
+
+![LabCar](assets/images/layout2.PNG)
