@@ -9,7 +9,7 @@ $(document).ready(() =>{
 
   // validate email
   functionValidateEmail = (email, inputEmail)=>{
-    if (email != 0 && isValidEmailAddress(email)) {
+    if (email !== 0 && isValidEmailAddress(email)) {
       inputEmail.addClass('success');
       inputEmail.removeClass('error');
       validateEmail = true;

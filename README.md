@@ -2,43 +2,49 @@
 
 ## Objetivo
 
-- El objetivo de esta pagina es replicar la parte visual de la web LabCar, como tambien agregarle modales a los botones "Iniciar sesión", "Registrate", "Convierte en conductor", esto lo haremos con Bootstrap. 
+- El objetivo de esta pagina es, que el usuario pueda tener una cuenta, para hacer collages personalizados.
 
-## Flujo de trabajo
+## Planificación, Organización y Ejecución
 
-- Primero creamos la estructura HTML, en forma anidada.
-- Comentar el código.
-- Enlazamos el archivo externo del CSS, esto para un mayor orden y hacer uso de las buenas practicas.
-- Enlazamos los archivos descargados, para hacer uso de las herramientas de Bootstrap.
-- Luego continuamos trabajando en CSS.
-- Comentar el código.
-- Subimos avances a github.
-- Terminar de dar estilo con CSS.
-- Empezamos a trabajar con los media queries, para adaptar las vistas a la ventana del navegador.
-- Comentar el código.
-- Subimos avances a github.
-- Cumplimos con el objetivo.
-- Digitar el archivo README.md
-- Subir el producto final a github.
-- Crear la rama "gh-pages".
+- Miercoles: 07/02/2018
+   - Primero nos organizamos y dividimos el trabajo por tareas.
+   - Luego cada una subio sus avances a github, previo a esto nos comunicamos por slack para no entrar en conflictos.
+   - Para finalizar nos dimos feedback, verificamos el producto final y lo aceptamos. 
 
 ## Herramientas Utilizadas
 
-- Html, para la estructura del contenido.
-- Css, para darle estilo al contenido.
-- Bootstrap
+- Html5, para la estructura del contenido.
+- API Drag and Drop.
+- Css3, para darle estilo al contenido.
+- JS6, para la logica de la página.
+- Jquery, para acceder al DOM.
+- Bootstrap4
 - Media queries.
 
 ## Fuente consultada
 
-- [Laboratoria LMS] : https://lms.laboratoria.la/cohorts/lim-2017-09-bc-core-pm/courses/social-network/01-css-frameworks/02-bootstrap
+[Laboratoria LMS](https://lms.laboratoria.la/cohorts/lim-2018-01-bc-js-front-end-developer/courses/spa/01-html-5/08-geolocation-challenges)
 
-- [Bootstrap] : https://getbootstrap.com/docs/3.3/css/#forms
+## Imagen
 
-- [W3School] : https://www.w3schools.com/bootstrap/bootstrap_forms.asp
+- Vista Log In
 
-## Imagen 
+![Insta Collage](assets/readme/log-in.png)
 
-- Vista Mobile
+- Vista Sign Up
 
-![LabCar](assets/images/mobile.png)
+![Insta Collage](assets/readme/sign-up.png)
+
+- Vista Collage
+
+![Insta Collage](assets/readme/collage.png)
+
+- Vista Drag and Drop
+
+![Insta Collage](assets/readme/drag-drop.png)
+
+## Integrantes
+
+- Araceli Cueva
+- Betsy Vidal
+- Melissa Yauri

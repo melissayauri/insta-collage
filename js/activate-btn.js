@@ -1,6 +1,6 @@
-$(document).ready(() =>{
+$(document).ready(() => {
   cl = console.log;
-  activeButton = (btn) =>{
+  activeButton = (btn) => {
     if (validateEmail === true && validatePassword === true) {
       btn.removeAttr('disabled');
     } else {

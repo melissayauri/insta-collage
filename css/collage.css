@@ -47,18 +47,18 @@ body {
   font-size: 3rem;
 }
 
-/* Style for images*/
+/* Style for views collage*/
 
 .imagen {
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   float: left;
 }
 
 /* contenedores*/
 [data-container ] {
-  height: 500px;
-  width: 200px;
+  height: 300px;
+  width: 100%;
   margin: 1rem;
   background-color: rgba(154,154,154, 0.5);
   float: left;
@@ -70,15 +70,16 @@ body {
 
 @media (min-width: 992px) {
   [data-container ] {
-    height: 1400px;
-    width: 600px;
+    height: 450px;
+    width: 100%;
     margin: 1rem;
     background-color: rgba(154,154,154, 0.5);
     float: left;
   }
+
   .imagen {
-    width: 300px;
-    height: 300px;
+    width: 180px;
+    height: 180px;
     float: left;
   }
  }
