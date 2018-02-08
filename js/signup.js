@@ -1,29 +1,31 @@
 $(document).ready(() =>{
+  alert('Tu Password debe contener letras mayusculas y minuscula, 2 cacteres especial y numeros');
+  cl = console.log;
+
   let $auth = firebase.auth();
-
-  isValidEmailAddress = (emailAddress) => {
-    let regEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
-    return regEmail.test(emailAddress);
-  };
-
-  // validate email
-  validateEmail = (email)=>{
-    
-
-  };
 
   let $btnSignup = $('#btn-signup');
 
-  $btnSignup.on('click', (event) => {
-    let $inputEmail = $('#inputUser');
-    let $inputPassword = $('#inputPassword');
+  let $inputEmail = $('#inputUser');
+  let $inputPassword = $('#inputPassword');
+
+  $inputEmail.on('input', (event) => {
     let $email = $inputEmail.val();
-    let $pass = $inputPassword.val();
-    console.log($email);
-    console.log($pass);      
-    let $promise = $auth.createUserWithEmailAndPassword($email, $pass);
-    $promise.catch(event => alert(event.message));
-      
+    cl($email);
+    functionValidateEmail($email, $inputEmail);
+  });
+
+  $inputPassword.on('input', (event) => {
+    let $password = $inputPassword.val();
+    cl($password);
+    functionValidatePassword($password, $inputPassword);
+  });
+  
+  // activeButton($btnLogin);  
+
+  $btnSignup.on('click', (event) => {  
+    let $promise = $auth.createUserWithEmailAndPassword($email, $password);
+    $promise.catch(event => alert(event.message));    
     window.location.href = '../index.html';
   });
 });
