@@ -84,3 +84,44 @@ body {
 .container-input {
   margin-bottom: 3rem;
 }
+
+
+
+/* clases para la vista collage*/
+
+
+
+
+.imagen {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+/* contenedores*/
+[data-container ] {
+  height: 500px;
+  width: 200px;
+  margin: 1rem;
+  background-color: rgba(154,154,154, 0.5);
+  float: left;
+}
+
+.line{
+  outline: 1px solid red;
+}
+
+@media (min-width: 992px) {
+  [data-container ] {
+    height: 1400px;
+    width: 600px;
+    margin: 1rem;
+    background-color: rgba(154,154,154, 0.5);
+    float: left;
+  }
+  .imagen {
+    width: 300px;
+    height: 300px;
+    float: left;
+  }
+ }
