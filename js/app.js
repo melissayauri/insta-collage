@@ -8,22 +8,21 @@ $(document).ready(function() {
 
   let $inputEmail = $('#inputUser');
   let $inputPassword = $('#inputPassword');
-
+  let $email;
+  let $password;
 
   $inputEmail.on('input',(event)=>{
-    let $email = $inputEmail.val();
+    $email = $inputEmail.val();
     cl($email);
     functionValidateEmail($email,$inputEmail);
   });
 
   $inputPassword.on('input',(event)=>{
-    let $password = $inputPassword.val();
+    $password = $inputPassword.val();
     cl($password);
     functionValidatePassword($password,$inputPassword);
+    activeButton($btnLogin);
   });
-
-  
-  // activeButton($btnLogin);
 
   $btnLogin.on('click', (event) =>{
     let $promise = $auth.signInWithEmailAndPassword($email, $password);
