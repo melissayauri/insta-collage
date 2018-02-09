@@ -25,8 +25,10 @@ window.addEventListener('load', function(event) {
       return;
     }
     let elementId = event.dataTransfer.getData('text');
-    
+
+    var div = document.createElement('div');
     var img = document.createElement('img');
+    
     img.classList.add('container-collage-img');
     img.setAttribute('src', elementId);
 

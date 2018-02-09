@@ -20,7 +20,7 @@ $(document).ready(() => {
             $containerImgCollage.html('');
             for (var key in data) {
               $containerImgCollage.append(`
-              <div class="container-imagen col-xs-2 col-sm-1 col-md-4 col-lg-4 container-padding">
+              <div class="container-imagen col-xs-2 col-sm-1 col-md-1 col-lg-1 container-padding">
               <img id="${data[key].name}" class="imagen" draggable="true" src="${data[key].url}">
               </div>`);
             }

@@ -46,6 +46,10 @@ body {
   border-style: dashed
 }
 
+.button-burger {
+  margin-left: 1rem;
+}
+
 /* Style for views collage*/
 
 .container-imagen {
@@ -59,13 +63,11 @@ body {
 
 /* Style for contenedores*/
 
-[data-container ] {
+.data-container {
   height: 300px;
   background-color: rgba(154,154,154, 0.5);
-}
-
-.line{
-  outline: 1px solid red;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .container-collage-img {
