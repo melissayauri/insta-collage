@@ -19,7 +19,10 @@ $(document).ready(() => {
             let data = s.val();
             $containerImgCollage.html('');
             for (var key in data) {
-              $containerImgCollage.append(`<img id="${data[key].name}" draggable="true" class="imagen" src="${data[key].url}">`);
+              $containerImgCollage.append(`
+              <div class="container-imagen col-xs-2 col-sm-1 col-md-4 col-lg-4 container-padding">
+              <img id="${data[key].name}" class="imagen" draggable="true" src="${data[key].url}">
+              </div>`);
             }
           });
       }

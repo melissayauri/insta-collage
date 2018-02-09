@@ -18,39 +18,42 @@
 
 <body>
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <nav class="navbar navbar-default navbar-container">
-          <div class="container-fluid">
-            <div class="navbar-header container-img-icon">
-              <a class="navbar-brand" href="#">
-                <img id="image-profile" alt="user" src="../assets/images/user.png">
-              </a>
-              <div class="container-close">
-                <a class="container-close" href="../index.html">close</a>
-              </div>
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 container-icon">
-                <form id="form-imagenes" class="photo-profile" action="">
-                  <label class="btn btn-file">
-                    <input type="file" name="file" value="" id="file" class="hidden">
-                    <i class="fa fa-plus-circle icon"></i>
-                  </label>
-                </form>
-              </div>
-            </div>
-          </div>
-        </nav>
+    <nav class="navbar navbar-default navbar-container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand pull-right" href="#">
+            <img id="image-profile" alt="user" src="../assets/images/user.png">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="signUp.html">
+                <span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            </li>
+            <li>
+              <a href="../index.html">
+                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav>
   </header>
   <div class="container-fluid">
     <div class="row">
       <div class="col-xs-12 col-md-12">
+        <!--seccion para colocar el collage-->
         <div class="col-xs-12 col-md-12">
-          <!--seccion para colocar el collage-->
-          <div id="container-title" data-container="true" class="border container-close container-padding">
-            <!-- <h1 id="title"> Haz tu collage</h1> -->
-            <div class="col-xs-6 col-md-6 container-collage-img border container-padding"></div>
+          <div data-container="true" class="col-xs-12 col-md-12 flex border container-padding">
+            <div id="container-title" class="col-xs-6 col-md-6 container-collage-img border container-padding">
+              <h1 id="title"> Haz tu collage</h1>
+            </div>
             <div class="col-xs-6 col-md-6 container-collage-img border container-padding">
               <div class="col-xs-12 col-md-12 container-collage container-padding"></div>
               <hr class="border">
@@ -58,12 +61,20 @@
             </div>
           </div>
         </div>
-        <!--seccion de imagen¿es-->
+        <!-- section de file-->
+        <div class="col-xs-12 col-md-12">
+          <form id="form-imagenes" class="photo-profile" action="">
+            <label class="btn btn-file">
+              <input type="file" name="file" value="" id="file" class="hidden">
+              <i class="fa fa-camera-retro icon"></i>
+            </label>
+          </form>
+        </div>
+        <!-- section de imagenes -->
         <div class="col-xs-12 col-md-12">
           <div id="container-img-collage" data-container="true" class="container-img border container-close">
             <div class="col-xs-12 col-md-12">
               <h1>Elije tus fotos</h1>
-              <p>Has click en el boton de arriba</p>
             </div>
           </div>
         </div>

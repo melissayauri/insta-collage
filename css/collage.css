@@ -14,6 +14,17 @@ body {
   background: linear-gradient(20deg, #c07b4f 10%, #ae9354, #68b285 80%);
 }
 
+.flex {
+  display: flex;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  color: #fff;
+}
+
 /* Style for header */
 
 .navbar-container {
@@ -24,23 +35,6 @@ body {
 [alt="user"] {
   width: 3rem;
   border-radius: 100%;
-}
-
-.container-img-icon {
-  display: flex;
-}
-
-.container-close {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  color: #fff;
-}
-
-.container-icon {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .icon {
@@ -54,19 +48,20 @@ body {
 
 /* Style for views collage*/
 
-.imagen {
-  width: 70px;
-  height: 70px;
-  float: left;
+.container-imagen {
+  height: 7rem;
 }
 
-/* contenedores*/
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+/* Style for contenedores*/
+
 [data-container ] {
   height: 300px;
-  width: 100%;
-  margin: 1rem;
   background-color: rgba(154,154,154, 0.5);
-  float: left;
 }
 
 .line{
@@ -93,16 +88,12 @@ hr {
 
 @media (min-width: 992px) {
   [data-container ] {
-    height: 450px;
-    width: 100%;
-    margin: 1rem;
+    min-height: 450px;
     background-color: rgba(154,154,154, 0.5);
-    float: left;
   }
 
   .imagen {
-    width: 180px;
-    height: 180px;
-    float: left;
+    width: 100%;
+    height: 100%;
   }
  }
