@@ -3,9 +3,9 @@ window.addEventListener('load', function(event) {
   let draggable = document.querySelectorAll('[draggable]');
   let containers = document.querySelectorAll('[data-container]');
   let title = document.getElementById('title');
-  let containerTitle = document.getElementById('container-title');
+  let containerImg1 = document.getElementById('container-img-1');
 
-  /* ejecutando los eventos*/
+  /* Ejecutando los eventos*/
   draggable.forEach(function(value, i) {
     draggable[i].addEventListener('dragstart', dragstart);
   });
@@ -21,19 +21,35 @@ window.addEventListener('load', function(event) {
   function selection(event) {
     event.preventDefault();
     if (event.type !== 'drop') {
-      /* console.log(event);*/
       return;
     }
     let elementId = event.dataTransfer.getData('text');
 
-    var div = document.createElement('div');
-    var img = document.createElement('img');
-    
-    img.classList.add('container-collage-img');
-    img.setAttribute('src', elementId);
+    let icon = document.createElement('i');
+    let img = document.createElement('img');
+    let div = document.createElement('div');
 
-    event.target.appendChild(img);
-    containerTitle.removeChild(title);
+    icon.classList.add('times-circle');
+    img.classList.add('imagen');
+    div.classList.add('container-collage-img');
+    img.setAttribute('src', elementId);
+    icon.setAttribute('data-img', elementId);
+
+    div.appendChild(icon);
+    div.appendChild(img);
+    event.target.appendChild(div);
+
+    icon.addEventListener('click', remove);
+    function remove(event) {
+      if (icon.dataset.img === img.getAttribute('src')) {
+        let elementFather = this.parentNode;
+        let elementContainerFather = elementFather.parentNode;
+
+        elementContainerFather.removeChild(elementFather);
+      }
+    }
+
+    containerImg1.removeChild(title);
   }
 });
 
