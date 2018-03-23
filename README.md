@@ -2,7 +2,8 @@
 
 The present work consists of the user makes a collage with the photos that he or she wants. The platform is suitable for mobile and computer desk.
 
-![image](https://user-images.githubusercontent.com/32289930/37803614-d5045a84-2dfd-11e8-8429-2655c8d4e704.png)
+![image](https://user-images.githubusercontent.com/32289930/37804755-df3106b4-2e03-11e8-81c3-478566fa4a4e.png)
+
 
 ## Team
 
