@@ -15,7 +15,7 @@ Insta Collage consists of the user makes a collage with the photos that he or sh
 - Betsy Vidal
 - Melissa Yauri
 
-## Herramientas Utilizadas
+## Tools
 
 - Html5
 - API Drag and Drop.
